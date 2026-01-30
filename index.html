@@ -4,20 +4,22 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Silver Palace | Wholesale Sterling Jewelry (Miami)</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="./styles.css?v=9"/>
 </head>
 <body>
 
   <div data-header></div>
 
   <main>
-    <section class="hero">
+
+    <!-- HERO -->
+    <section class="hero reveal">
       <div class="container hero-grid">
-        <div>
+        <div class="reveal-stagger">
           <h1>Wholesale Sterling Jewelry<br>with a Miami finish</h1>
           <p>
             A premium catalog experience designed for wholesale buyers and retail customers.
-            Fast browsing, clean collections, and a polished storefront that looks like an established supplier.
+            Fast browsing, clean collections, and a polished storefront that looks established.
           </p>
 
           <div class="hero-cta">
@@ -28,65 +30,94 @@
           <div class="trustrow">
             <span class="trust">✓ B2B / Wholesale-ready</span>
             <span class="trust">✓ 925 Sterling focus</span>
-            <span class="trust">✓ Minimum order ready</span>
+            <span class="trust">✓ Fast browsing + quick order</span>
             <span class="trust">✓ Miami Jewelry District</span>
           </div>
+
+          <p class="small muted" style="margin-top:14px">
+            Wholesale pricing is available after login (demo). Use “Quick Add” for faster ordering.
+          </p>
         </div>
 
-        <div class="hero-card">
+        <div class="hero-card reveal-stagger">
           <div class="tile">
-            <h3>Catalog-first layout</h3>
-            <p>Big category navigation and fast product browsing — perfect for repeat wholesale buyers.</p>
+            <h3>Wholesale-first UI</h3>
+            <p>Designed for repeat buyers: categories, quick view, compare, and speed.</p>
           </div>
           <div class="tile">
-            <h3>Newsletter + promotions</h3>
-            <p>Popup + footer newsletter sections for promotions and savings.</p>
+            <h3>Modern luxury motion</h3>
+            <p>Shine effects, hover depth, and clean typography — premium without being loud.</p>
           </div>
           <div class="tile">
-            <h3>Easy upgrade path</h3>
-            <p>Swap in real photos + inventory, then connect Shopify/Stripe when the client approves.</p>
+            <h3>Easy upgrades</h3>
+            <p>Connect real inventory + Shopify/Stripe after approval. This is a demo-ready showroom.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- SHOP BY COLLECTION -->
+    <section class="section reveal">
       <div class="container">
         <div class="section-head">
           <div>
             <h2>Shop by Collection</h2>
-            <p>Organized, high-end tiles that guide buyers quickly — like a real wholesale supplier storefront.</p>
+            <p>Quick access to popular wholesale categories — tiles loop product imagery automatically.</p>
           </div>
           <a class="btn" href="shop.html">Shop all</a>
         </div>
 
         <div class="tiles">
-          <a class="tilecard" href="shop.html#Chains">
+          <a class="tilecard" href="shop.html#Chains" data-loop="chains">
             <div class="img"></div>
-            <div class="pad"><strong>Chains / Bracelets</strong><span class="muted small">View</span></div>
+            <div class="pad">
+              <strong>Chains / Bracelets</strong><span class="muted small">View</span>
+            </div>
           </a>
-          <a class="tilecard" href="shop.html#Moissanite">
+
+          <a class="tilecard" href="shop.html#Moissanite" data-loop="moissanite">
             <div class="img"></div>
-            <div class="pad"><strong>Moissanite</strong><span class="muted small">View</span></div>
+            <div class="pad">
+              <strong>Moissanite</strong><span class="muted small">View</span>
+            </div>
           </a>
-          <a class="tilecard" href="shop.html#Italian">
+
+          <a class="tilecard" href="shop.html#Italian" data-loop="italian">
             <div class="img"></div>
-            <div class="pad"><strong>Italian Collection</strong><span class="muted small">View</span></div>
+            <div class="pad">
+              <strong>Italian Collection</strong><span class="muted small">View</span>
+            </div>
           </a>
-          <a class="tilecard" href="shop.html#Closeout">
+
+          <a class="tilecard" href="shop.html#Closeout" data-loop="closeout">
             <div class="img"></div>
-            <div class="pad"><strong>Closeout</strong><span class="muted small">View</span></div>
+            <div class="pad">
+              <strong>Closeout</strong><span class="muted small">View</span>
+            </div>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top:0;">
+    <!-- GUARANTEES -->
+    <section class="section reveal" style="padding-top:0;">
+      <div class="container">
+        <div class="guarantees">
+          <div class="gitem">✔ Authentic 925 Sterling</div>
+          <div class="gitem">✔ Quality Checked</div>
+          <div class="gitem">✔ Wholesale-Friendly Ordering</div>
+          <div class="gitem">✔ Fast Support via WhatsApp</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section reveal" style="padding-top:0;">
       <div class="container">
         <div class="section-head">
           <div>
             <h2>Featured Products</h2>
-            <p>Demo inventory (10 items) included to sell the experience. Replace with real SKUs after approval.</p>
+            <p>Demo inventory (10 items) to showcase the full shopping experience.</p>
           </div>
           <a class="btn" href="shop.html">View catalog</a>
         </div>
@@ -95,32 +126,70 @@
       </div>
     </section>
 
-    <section class="section band">
-      <div class="container bandgrid">
-        <div>
-          <h2>Wholesale built for speed</h2>
-          <p class="small">
-            Min order, bulk inquiry flow, and a navigation system that keeps professional buyers moving.
-            Built to feel like a true supplier storefront.
-          </p>
+    <!-- WHY -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Why Silver Palace</h2>
+            <p>Trust builders that make the brand feel real and established.</p>
+          </div>
         </div>
-        <div class="box">
-          <div class="small" style="line-height:1.9">
-            • Bulk pricing (phase 2)<br/>
-            • Quick order lists (phase 2)<br/>
-            • Customer accounts (phase 2)<br/>
-            • Live inventory sync (optional)
+
+        <div class="whygrid">
+          <div class="whycard">
+            <h3>Downtown Miami</h3>
+            <p>Located in the Jewelry District — built for wholesale buyers and fast reorders.</p>
+          </div>
+          <div class="whycard">
+            <h3>Wholesale Focus</h3>
+            <p>Quick Add, Compare, and SKU copy tools designed for high-volume ordering.</p>
+          </div>
+          <div class="whycard">
+            <h3>Premium Presentation</h3>
+            <p>Luxury motion and spacing. Clean, modern, and easy to expand.</p>
+          </div>
+          <div class="whycard">
+            <h3>Easy Upgrade Path</h3>
+            <p>Swap in real SKUs/inventory and connect checkout when client approves.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section news">
+    <!-- MAP -->
+    <section class="section reveal" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Visit Us</h2>
+            <p>Downtown Miami • Jewelry District</p>
+          </div>
+          <a class="btn" href="contact.html">Wholesale Inquiry</a>
+        </div>
+
+        <div class="mapwrap">
+          <iframe
+            title="Silver Palace Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Miami%20Jewelry%20District&output=embed">
+          </iframe>
+        </div>
+
+        <p class="small muted" style="margin-top:10px">
+          Replace this map with your exact address once the client confirms location.
+        </p>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section news reveal">
       <div class="container">
         <div class="section-head" style="margin-bottom:10px">
           <div>
             <h2>Subscribe & Save</h2>
-            <p>Get promotions, closeout alerts, and new arrivals (demo form).</p>
+            <p>Promotions, closeout alerts, and new arrivals.</p>
           </div>
         </div>
 
@@ -130,9 +199,16 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <div data-footer></div>
-  <script src="app.js"></script>
+
+  <!-- floating whatsapp -->
+  <a class="whatsapp-fab" href="https://wa.me/13050000000" target="_blank" rel="noopener">
+    WhatsApp
+  </a>
+
+  <script defer src="./app.js?v=9"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>About | Silver Palace</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=9"/>
 </head>
 <body>
 
@@ -12,41 +12,43 @@
 
   <main class="section">
     <div class="container">
-      <div class="card">
-        <h2 style="font-family:'Playfair Display',serif;margin:0 0 10px;font-size:40px;">About Silver Palace</h2>
-        <p class="small">
-          Silver Palace is a Downtown Miami Jewelry District business specializing in sterling silver jewelry for retail and wholesale buyers.
-          This demo site is built in a platinum & white theme to present the brand like a premium showroom.
+      <div class="card pagecard reveal" style="padding:22px">
+        <h2 class="pageTitle">About Silver Palace</h2>
+        <p class="small muted">
+          Silver Palace is a Downtown Miami Jewelry District business offering sterling jewelry for wholesale and retail buyers.
+          This website is designed as a digital showroom — clean navigation, fast browsing, and wholesale-friendly tools.
         </p>
 
-        <hr class="line">
+        <hr class="line"/>
 
-        <div class="product-grid" style="grid-template-columns:repeat(3,1fr)">
-          <div class="product" style="box-shadow:none">
-            <div class="pad">
-              <h4>Premium Presentation</h4>
-              <p class="small">Luxury typography, spacing, and layout built to earn trust instantly.</p>
-            </div>
+        <div class="whygrid">
+          <div class="whycard">
+            <h3>Wholesale Tools</h3>
+            <p>Quick Add, Compare Drawer, SKU copy, and Recently Viewed to speed up ordering.</p>
           </div>
-          <div class="product" style="box-shadow:none">
-            <div class="pad">
-              <h4>Wholesale Ready</h4>
-              <p class="small">Designed to scale into bulk pricing, login, and wholesale-specific features.</p>
-            </div>
+          <div class="whycard">
+            <h3>Luxury Motion</h3>
+            <p>Clean hover depth + shine effects — premium feel without clutter.</p>
           </div>
-          <div class="product" style="box-shadow:none">
-            <div class="pad">
-              <h4>Fast Expansion</h4>
-              <p class="small">Swap demo inventory with real product photos and connect Shopify/Stripe anytime.</p>
-            </div>
+          <div class="whycard">
+            <h3>Expandable</h3>
+            <p>Connect accounts, tiered pricing, and checkout when the client is ready.</p>
+          </div>
+          <div class="whycard">
+            <h3>Miami Energy</h3>
+            <p>Designed to match a jewelry district wholesale storefront style.</p>
           </div>
         </div>
-
       </div>
     </div>
   </main>
 
   <div data-footer></div>
-  <script src="app.js"></script>
+
+  <a class="whatsapp-fab" href="https://wa.me/13050000000" target="_blank" rel="noopener">
+    WhatsApp
+  </a>
+
+  <script defer src="./app.js?v=9"></script>
 </body>
 </html>

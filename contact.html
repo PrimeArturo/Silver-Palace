@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Contact | Silver Palace</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=9"/>
 </head>
 <body>
 
@@ -12,43 +12,48 @@
 
   <main class="section">
     <div class="container">
-      <div class="card">
-        <h2 style="font-family:'Playfair Display',serif;margin:0 0 10px;font-size:40px;">Contact</h2>
-        <p class="small">Wholesale inquiries, bulk pricing, and product questions (demo form).</p>
+      <div class="card pagecard reveal" style="padding:22px">
+        <h2 class="pageTitle">Wholesale Inquiry</h2>
+        <p class="small muted">
+          Contact us for bulk pricing, availability, and quick ordering. (Demo form)
+        </p>
 
-        <hr class="line">
+        <hr class="line"/>
 
         <div class="filters">
-          <input class="input" placeholder="Name" />
+          <input class="input" placeholder="Business name" />
           <input class="input" placeholder="Email" />
         </div>
-
         <div class="filters">
-          <input class="input" placeholder="Phone (optional)" />
+          <input class="input" placeholder="Phone" />
           <select class="select">
             <option>Wholesale inquiry</option>
             <option>Retail question</option>
-            <option>Custom order</option>
+            <option>Custom request</option>
           </select>
         </div>
-
         <div class="filters">
-          <textarea class="input" rows="5" placeholder="Message"></textarea>
+          <textarea class="input" rows="6" placeholder="Tell us what you need (items, quantities, budget, timeline)…"></textarea>
         </div>
 
-        <button class="btn primary" type="button" onclick="alert('Sent (demo).')">Send Message</button>
+        <button class="btn primary" type="button" onclick="alert('Sent (demo).')">Send</button>
 
-        <hr class="line">
+        <hr class="line"/>
 
-        <p class="small">
-          Downtown Miami • Jewelry District<br>
+        <div class="small muted">
+          Downtown Miami • Jewelry District<br/>
           (305) 000-0000 • sales@silverpalacemiami.com
-        </p>
+        </div>
       </div>
     </div>
   </main>
 
   <div data-footer></div>
-  <script src="app.js"></script>
+
+  <a class="whatsapp-fab" href="https://wa.me/13050000000" target="_blank" rel="noopener">
+    WhatsApp
+  </a>
+
+  <script defer src="./app.js?v=9"></script>
 </body>
 </html>

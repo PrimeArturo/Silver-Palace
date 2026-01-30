@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Shop | Silver Palace</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="./styles.css?v=9"/>
 </head>
 <body>
 
@@ -12,33 +12,39 @@
 
   <main class="section">
     <div class="container">
-      <div class="section-head">
+
+      <div class="section-head reveal">
         <div>
           <h2>Catalog</h2>
-          <p>Search, filter, and quick-view products with a clean wholesale-ready layout.</p>
+          <p>Search, filter, compare, quick add, and quick view — wholesale speed tools built in.</p>
         </div>
         <span class="tag" id="resultsCount">0 item(s)</span>
       </div>
 
-      <div class="filters">
-        <input id="search" class="input" placeholder="Search products (chain, moissanite, pendant…)" />
-        <select id="category" class="select" aria-label="Category"></select>
+      <div class="shopbar reveal">
+        <div class="filters">
+          <input id="search" class="input" placeholder="Search products (chain, moissanite, pendant…)" />
+          <select id="category" class="select" aria-label="Category"></select>
+        </div>
+
+        <div class="metal-toggle" role="group" aria-label="Metal type">
+          <button class="mt active" data-metal="sterling" type="button">Sterling</button>
+          <button class="mt" data-metal="gold" type="button">Gold</button>
+          <button class="mt" data-metal="steel" type="button">Steel</button>
+        </div>
       </div>
 
       <div class="grid" id="shopGrid"></div>
-
-      <div class="section" style="padding-bottom:0">
-        <div class="card" style="padding:18px">
-          <strong>Wholesale note</strong>
-          <p class="small muted" style="margin:8px 0 0">
-            This is a demo catalog experience. Phase 2 adds customer accounts, quick order lists, minimum order enforcement, and checkout.
-          </p>
-        </div>
-      </div>
     </div>
   </main>
 
   <div data-footer></div>
-  <script src="app.js"></script>
+
+  <!-- floating whatsapp -->
+  <a class="whatsapp-fab" href="https://wa.me/13050000000" target="_blank" rel="noopener">
+    WhatsApp
+  </a>
+
+  <script defer src="./app.js?v=9"></script>
 </body>
 </html>
