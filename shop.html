@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Shop | Silver Palace</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <div data-header></div>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Catalog</h2>
+          <p>Search, filter, and quick-view products with a clean wholesale-ready layout.</p>
+        </div>
+        <span class="tag" id="resultsCount">0 item(s)</span>
+      </div>
+
+      <div class="filters">
+        <input id="search" class="input" placeholder="Search products (chain, moissanite, pendant…)" />
+        <select id="category" class="select" aria-label="Category"></select>
+      </div>
+
+      <div class="grid" id="shopGrid"></div>
+
+      <div class="section" style="padding-bottom:0">
+        <div class="card" style="padding:18px">
+          <strong>Wholesale note</strong>
+          <p class="small muted" style="margin:8px 0 0">
+            This is a demo catalog experience. Phase 2 adds customer accounts, quick order lists, minimum order enforcement, and checkout.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+  <script src="app.js"></script>
+</body>
+</html>
